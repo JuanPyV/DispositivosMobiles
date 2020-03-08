@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="128dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="142dp"
+        android:onClick="abrirHobby"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobby"
+        app:srcCompat="@drawable/me_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="161dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="125dp"
+        android:onClick="abrirFriends"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/friends_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="209dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="125dp"
+        android:onClick="abrirMessage"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
