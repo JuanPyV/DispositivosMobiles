@@ -50,4 +50,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/winston" />
 
+    <EditText
+        android:id="@+id/prueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="595dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

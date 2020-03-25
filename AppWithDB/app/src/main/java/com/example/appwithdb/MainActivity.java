@@ -17,7 +17,7 @@ import java.util.Properties;
 public class MainActivity extends AppCompatActivity {
 
     private Properties properties;
-    private static final String PROPERTIES_FILE = "properties.xml";
+    private static final String PROPERTIES_FILE = "properties1.xml";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
             //Toast.makeText(this, "NO EXISTE ARCHIVO", Toast.LENGTH_SHORT).show();
-            guardarMemoria("Saludo1", "Que ondita amiguito intentito");
-            guardarMemoria("Saludo2", "Hola.");
+            guardarMemoria("Saludo1", "Primer mensaje");
+            guardarMemoria("Saludo2", "Segundo mensaje");
             saveProperties();
         }
 
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     public void guardarAlmacenamiento(View v){
         //asginar a boton
         saveProperties();
-        Toast.makeText(this, "Properties guardado por usuario", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Se guardaron las properties por usuario", Toast.LENGTH_SHORT).show();
     }
 
     public void imprimirSaludo1(View v){

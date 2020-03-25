@@ -28,8 +28,8 @@ public class MenuActivity extends AppCompatActivity {
         friends = findViewById(R.id.friendsb);
         guardar = findViewById(R.id.guardar);
         db = new DBHelper(this);
-        String hobbyText = db.find("User");
-        hobbyT.setText(hobbyText + "");
+       // String hobbyText = db.find("User");
+       // hobbyT.setText(hobbyText + "");
     }
 
     public void abrirFriends(View v){
@@ -45,10 +45,5 @@ public class MenuActivity extends AppCompatActivity {
         String hobbyText = db.find("User");
         hobbyT.setText(hobbyText + "");
     }
-
-    public void setHobby(View v){
-
-    }
-
 
 }
