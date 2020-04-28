@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Carnes",
+    "hobby": "LoL",
+    "age": 20,
+    "phone": 123456789,
+    "address": "Ameca"
+  },
+  {
+    "name": "Mayra",
+    "hobby": "Nada",
+    "age": 20,
+    "phone": 987654321,
+    "address": "GDL"
+  },
+  {
+    "name": "Guido",
+    "hobby": "LoL",
+    "age": 20,
+    "phone": 654321987,
+    "address": "GDL"
+  },
+  {
+    "name": "Pedro",
+    "hobby": "Clase de Memin",
+    "age": 20,
+    "phone": 165423987,
+    "address": "ITESM"
+  }
+]
