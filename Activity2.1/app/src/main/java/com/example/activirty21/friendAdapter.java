@@ -27,12 +27,13 @@ public class friendAdapter extends RecyclerView.Adapter<friendAdapter.friendView
         }
     }
 
-    private ArrayList<String> amigos;
+    private ArrayList<String> name, hobby;
     private View.OnClickListener listener;
 
-    public friendAdapter(ArrayList<String> amigos, View.OnClickListener listener){
+    public friendAdapter(ArrayList<String> name, ArrayList<String> hobby, View.OnClickListener listener){
 
-        this.amigos = amigos;
+        this.name = name;
+        this.hobby = hobby;
         this.listener = listener;
     }
 
@@ -40,6 +41,7 @@ public class friendAdapter extends RecyclerView.Adapter<friendAdapter.friendView
     @Override
     public friendViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = (View) LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false);
+        /*
         Button b = v.findViewById(R.id.botoncito);
 
         b.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +50,7 @@ public class friendAdapter extends RecyclerView.Adapter<friendAdapter.friendView
                 Log.wtf("STUDENT ADAPTER", "CLICKEADO");
             }
         });
-
+        */
         v.setOnClickListener(listener);
 
         friendViewHolder svh = new friendViewHolder(v);
@@ -59,14 +61,14 @@ public class friendAdapter extends RecyclerView.Adapter<friendAdapter.friendView
     @Override
     public void onBindViewHolder(@NonNull friendViewHolder holder, int position) {
 
-        holder.nombre.setText((amigos.get(position)));
-        holder.hobby.setText(amigos.get(position));
+        holder.nombre.setText((name.get(position)));
+        holder.hobby.setText(hobby.get(position));
 
     }
 
     @Override
     public int getItemCount() {
-        return amigos.size();
+        return name.size();
     }
 
 

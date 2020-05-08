@@ -1,0 +1,2 @@
+rootProject.name='Mapita'
+include ':app'
